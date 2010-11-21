@@ -45,6 +45,7 @@
                         focusField = field;
                     }
                     fields[i++] = oEmail[x][1];
+                    jcv_handleError(field, oEmail[x][1]);
                     bValid = false;
                 }
             }

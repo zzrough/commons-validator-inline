@@ -83,6 +83,7 @@
                                focusField = field;
                            }
                            fields[i++] = oDate[x][1];
+                           jcv_handleError(field, oDate[x][1]);
                            bValid =  false;
                         }
                      } else {
@@ -90,6 +91,7 @@
                             focusField = field;
                         }
                         fields[i++] = oDate[x][1];
+                        jcv_handleError(field, oDate[x][1]);
                         bValid =  false;
                      }
                  } else if ((orderMonth < orderYear && orderMonth > orderDay)) {
@@ -121,6 +123,7 @@
                                   focusField = field;
                              }
                              fields[i++] = oDate[x][1];
+                             jcv_handleError(field, oDate[x][1]);
                              bValid =  false;
                           }
                      } else {
@@ -128,6 +131,7 @@
                              focusField = field;
                          }
                          fields[i++] = oDate[x][1];
+                         jcv_handleError(field, oDate[x][1]);
                          bValid =  false;
                      }
                  } else if ((orderMonth > orderYear && orderMonth < orderDay)) {
@@ -159,6 +163,7 @@
                                  focusField = field;
                              }
                              fields[i++] = oDate[x][1];
+                             jcv_handleError(field, oDate[x][1]);
                              bValid =  false;
                          }
                      } else {
@@ -166,6 +171,7 @@
                               focusField = field;
                           }
                           fields[i++] = oDate[x][1];
+                          jcv_handleError(field, oDate[x][1]);
                           bValid =  false;
                      }
                  } else {
@@ -173,6 +179,7 @@
                          focusField = field;
                      }
                      fields[i++] = oDate[x][1];
+                     jcv_handleError(field, oDate[x][1]);
                      bValid =  false;
                  }
           }

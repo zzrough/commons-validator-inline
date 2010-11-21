@@ -38,6 +38,7 @@
 
             if (!jcv_isFieldPresent(field)) {
                 fields[i++] = oRequired[x][1];
+                jcv_handleError(field, oRequired[x][1]);
                 isValid=false;
             } else if ((field.type == 'hidden' ||
                 field.type == 'text' ||
@@ -69,6 +70,7 @@
                         focusField = field;
                     }
                     fields[i++] = oRequired[x][1];
+                    jcv_handleError(field, oRequired[x][1]);
                     isValid = false;
                 }
             } else if (field.type == "select-multiple") { 
@@ -86,6 +88,7 @@
                         focusField = field;
                     }
                     fields[i++] = oRequired[x][1];
+                    jcv_handleError(field, oRequired[x][1]);
                     isValid=false;
                 }
             } else if ((field.length > 0) && (field[0].type == 'radio' || field[0].type == 'checkbox')) {
@@ -101,6 +104,7 @@
                         focusField = field[0];
                     }
                     fields[i++] = oRequired[x][1];
+                    jcv_handleError(field, oRequired[x][1]);
                     isValid=false;
                 }
             }   

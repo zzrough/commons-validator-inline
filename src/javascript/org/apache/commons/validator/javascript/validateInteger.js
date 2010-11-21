@@ -61,6 +61,7 @@
                             focusField = field;
                         }
                         fields[i++] = oInteger[x][1];
+                        jcv_handleError(field, oInteger[x][1]);
 
                     } else {
                         var iValue = parseInt(value, 10);
@@ -69,6 +70,7 @@
                                 focusField = field;
                             }
                             fields[i++] = oInteger[x][1];
+                            jcv_handleError(field, oInteger[x][1]);
                             bValid = false;
                        }
                    }

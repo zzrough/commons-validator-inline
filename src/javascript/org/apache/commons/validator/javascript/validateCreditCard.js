@@ -44,6 +44,7 @@
                         focusField = field;
                     }
                     fields[i++] = oCreditCard[x][1];
+                    jcv_handleError(field, oCreditCard[x][1]);
                     bValid = false;
                 }
             }

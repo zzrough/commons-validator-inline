@@ -70,6 +70,7 @@
                             focusField = field;
                         }
                         fields[i++] = oFloat[x][1];
+                        jcv_handleError(field, oFloat[x][1]);
 
                     } else {
 	                var iValue = parseFloat(value);
@@ -78,6 +79,7 @@
 	                        focusField = field;
 	                    }
 	                    fields[i++] = oFloat[x][1];
+	                    jcv_handleError(field, oFloat[x][1]);
 	                    bValid = false;
 	                }
                     }

@@ -47,6 +47,7 @@
                         focusField = field;
                     }
                     fields[i++] = oMasked[x][1];
+                    jcv_handleError(field, oMasked[x][1]);
                     isValid = false;
                 }
             }

@@ -61,6 +61,7 @@
                             focusField = field;
                         }
                         fields[i++] = oByte[x][1];
+                        jcv_handleError(field, oByte[x][1]);
 
                     } else {
 
@@ -70,6 +71,7 @@
                                 focusField = field;
                             }
                             fields[i++] = oByte[x][1];
+                            jcv_handleError(field, oByte[x][1]);
                             bValid = false;
                         }
                     }

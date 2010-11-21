@@ -73,6 +73,7 @@
                         focusField = field;
                     }
                     fields[i++] = oMinLength[x][1];
+                    jcv_handleError(field, oMinLength[x][1]);
                     isValid = false;
                 }
             }

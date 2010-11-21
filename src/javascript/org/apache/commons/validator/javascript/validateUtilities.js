@@ -56,7 +56,21 @@
   }  
 
   /**
-   * Handle error messages.
+   * Handle a single error message.
+   * <p>
+   * This can be used to collect the error messages and to have
+   * an inline error display instead of the abstrusive default
+   * of displaying an alert for each validator type.
+   * 
+   * @param field The field in error.
+   * @param message The error message.
+   */
+  function jcv_handleError(field, message) {
+	  // nothing by default
+  }
+
+  /**
+   * Handle error messages. This is called for each type of validator.
    * @param messages Array of error messages.
    * @param focusField Field to set focus on.
    */
